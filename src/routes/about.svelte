@@ -2,6 +2,9 @@
   <title>About</title>
 </svelte:head>
 
-<h1>About Page</h1>
+<script lang="ts">
+</script>
 
-<a href="/">Home link</a>
+<div class="gutters">
+    <h1>About Page</h1>
+</div>
