@@ -1,11 +1,9 @@
-<header>
-    <div class="gutters">
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-        </nav>
-    </div>
-</header>
+<div class="gutters">
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+    </nav>
+</div>
 
 <style lang="scss">
     nav {
