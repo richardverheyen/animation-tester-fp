@@ -37,25 +37,6 @@
 		filter: drop-shadow(0 2px 4px rgba(#000, 0.1));
 		transition: all ease 200ms;
 
-		@media (max-width: 500px) {
-			position: absolute;
-			top: 15%;
-			right: -20px;
-			transform: scale(0.8);
-		}
-		@media (max-width: 450px) {
-			// transform: scale(0.95);
-		}
-		@media (max-width: 400px) {
-			// transform: scale(0.92);
-		}
-		@media (max-width: 380px) {
-			// transform: scale(0.90);
-		}
-		@media (max-width: 360px) {
-			// transform: scale(0.88);
-		}
-
 		> li {
 			list-style: none;
 			position: absolute;
@@ -80,7 +61,6 @@
 				background: center/100px 30px no-repeat url('/floatplane-logo.png'),
 					center/18px repeat url('/floatplane.png'), white;
 				border: 4px white solid;
-                // transform: translateZ(-20px) translateX(-50%) rotate3d(0.8, 0.2, -0.2, 66deg);
 			}
 		}
 
