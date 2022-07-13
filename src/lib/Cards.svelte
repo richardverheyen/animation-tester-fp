@@ -30,8 +30,7 @@
 		position: relative;
 		padding: 0;
         margin: auto;
-		width: 210px;
-		max-width: 18vw;
+        width: 190px;
 		height: 150px;
 		perspective: 950px;
 		filter: drop-shadow(0 2px 4px rgba(#000, 0.1));
