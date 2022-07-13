@@ -13,7 +13,7 @@
 
     function indexToStyles(i:number) {
         return `
-		animation-delay: ${(i - 1) * 30}ms;
+		animation-delay: ${(i - 1) * 100}ms;
         transform: translateZ(${i}px) rotate3d(0.7, 0.2, -0.2, 60deg);
         transform-origin: 0 100% -${i}px;
         perspective-origin: 0 100% -${i}px;`;
