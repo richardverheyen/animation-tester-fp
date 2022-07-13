@@ -12,7 +12,8 @@
 	];
 
     function indexToStyles(i:number) {
-        return `animation-delay: ${cards.length - i - 1}s;
+        return `
+		animation-delay: ${(i - 1) * 30}ms;
         transform: translateZ(${i}px) rotate3d(0.7, 0.2, -0.2, 60deg);
         transform-origin: 0 100% -${i}px;
         perspective-origin: 0 100% -${i}px;`;
@@ -27,6 +28,7 @@
 
 <style lang="scss">
 	ul {
+		background: red;
 		position: relative;
 		padding: 0;
         margin: auto;
@@ -45,9 +47,10 @@
 			width: 124px;
 			height: 208px;
 			border-radius: 10px;
-			// box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.05);
+			box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.05);
 			cursor: pointer;
 			transition: ease 500ms all;
+			transform-style: preserve-3d;
 
 			&:before {
 				content: '';
@@ -61,6 +64,29 @@
 				background: center/100px 30px no-repeat url('/floatplane-logo.png'),
 					center/18px repeat url('/floatplane.png'), white;
 				border: 4px white solid;
+
+				animation-name: dropIn;
+				animation-duration: 500ms;
+				animation-timing-function: ease-out;
+				animation-iteration-count: 1;
+				// animation-direction: normal;
+				animation-fill-mode: forwards;
+				animation-delay: inherit;
+				transform-style: preserve-3d;
+				opacity: 0;
+
+				@keyframes dropIn {
+					0% {
+						transform: translateZ(100px);
+					}
+					30% {
+						opacity: 0;
+					}
+					100% {
+						transform: translateZ(0px);
+						opacity: 1;
+					}
+				}
 			}
 		}
 
